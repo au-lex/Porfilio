@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import { InfinitySpin } from 'react-loader-spinner';
 import { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 const About = () => {
 
   const [showLoader, setShowLoader] = useState(true);
@@ -79,6 +80,9 @@ const About = () => {
             let's connect and make web magic together!
           </p>
           <section className="aboutBtn flex mt-12 space-x-12">
+            <a href="https://drive.google.com/file/d/1qx_TiuhqNh99U212ZcxBf5gg1DGg4akW/view?usp=sharing" download target="blank">
+
+           
             <button class="button abtDesoc " type="button">
               <span class="button__text">Download Cv</span>
               <span class="button__icon">
@@ -95,6 +99,8 @@ const About = () => {
                 </svg>
               </span>
             </button>
+             </a>
+             <Link to={"/Contact"}>
             <button class="button  abtDesoc" type="button">
               <span class="button__text">Hire Me</span>
               <span class="button__icon t">
@@ -103,31 +109,39 @@ const About = () => {
                 </svg>
               </span>
             </button>
+            </Link>
           </section>
-          <div className="socialLinks mt-[4rem]">
-            <section className="flex space-x-12">
-              <li class="border rounded-full border-gray-300 p-4 abtDesoc hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-linkedin-box-fill"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4 abtDesoc hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
-                <span>
-                  <i class="ri-mail-line"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4 abtDesoc  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-twitter-x-line"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4 abtDesoc hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-github-fill"></i>
-                </span>
-              </li>
-            </section>
-          </div>
+          <div className="socialLinks mt-[8rem]">
+                <section className="flex space-x-12">
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href ="https://www.linkedin.com/in/boniface-ifebuche-aulex-467a74247/" target ="blank">
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
+                  <a target="blank" 
+                   href="mailto:bonifacepaul500@gmail.com?subject=Feedback&body=Hello! 
+                  what can we offer your.">
+
+                    
+                      <i class="ri-mail-line"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href ="https://twitter.com/Aulex_0?t=GI4YSNRgnRbbThqUDLI4OA&s=09" target="blank">
+                      <i class="ri-twitter-x-line"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600 
+                    hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href="https://github.com/au-lex?tab=repositories"  target="blank">
+                      <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a></a>
+                  </li>
+                </section>
+              </div>
         </section>
         <section className="progressSkills lg:w-[50%] h-[30rem] text-[15px] px-4 lg:block  hidden">
           <h3 className="capitalize text-[2rem] my-4">skills</h3>

@@ -69,9 +69,13 @@ const ProjectCard = ({ project }) => {
                
                 <div className='w-[320px] h-[200px] rounded-[10px]'>
                     <img src={project.imgUrl} alt="project" className='w-[100%] rounded-[10px]' />
-                    <p className='text-[1.4rem] font-bold'>{project.description}</p>
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-decoration-none  text-[1.4rem] font-bold">
+                    <section className='pl-3'>
+
+                    <p className='text-[1.2rem] '>{project.description}</p>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" 
+                    className="text-decoration-none  text-[1rem] ">
                        Visit Link </a>
+                        </section>
                 </div>
                 </div>
         
