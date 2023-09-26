@@ -1,42 +1,272 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+li {
+    list-style: none;
+}
+
+.bg {
+    background-image: url("https://res.cloudinary.com/durbee4ln/image/upload/v1691831058/home-banner.jpg_ultxdz.webp");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+  color: #03a9f4;
+  /* color: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4); */
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dot {
+  
+ 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* CSS for Header Component */
+/* Desktop Navigation */
+.lg:flex {
+  display: flex;
+}
+
+.space-x-60 {
+  margin-right: 60px;
+}
+
+/* Mobile Navigation */
+.menuOpen {
+  cursor: pointer;
+}
+
+.active {
+  color: red; /* Change to your desired active color */
+}
+
+/* Mobile Menu */
+.navContainer {
+  display: none;
+ 
+}
+
+/* Adjust the mobile menu styles when it's active */
+.menuOpen.active + .navContainer {
+  display: block;
+}
+
+
+.btn {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .btn:hover {
+    animation: ani 8s linear infinite;
+    border: none;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  @keyframes ani {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
   }
+  
+  .btn:hover:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 2s;
+  }
+  
+  .btn:hover::before {
+    filter: blur(20px);
+  }
+  
+  .btn:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  }
+
+
+
+
+  .button {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #3498db;
+    background-color: #3498db;
+    overflow: hidden;
+  
+  }
+  
+  .button, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .button .button__text {
+    transform: translateX(22px);
+    /* color: #fff; */
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .svg {
+    width: 20px;
+    fill: #fff;
+  }
+  
+  .button:hover {
+    background: #3498db;
+  }
+  
+  .button:hover .button__text {
+    color: transparent;
+  }
+  
+  .button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button:active .button__icon {
+    background-color: #3498db;
+  }
+  
+  .button:active {
+    border: 1px solid #3498db;
+  }
+.t svg {
+  fill: #fff;
+  width: 20px;
 }
 
-.card {
-  padding: 2em;
+.progress-container, .profile {
+  box-shadow: rgba(100, 100, 111, 0.01) 0px 7px 29px 0px;
+  margin-bottom: 20px;
+
+  @apply flex
+  
 }
 
-.read-the-docs {
-  color: #888;
+.progress-bar {
+  width: 100%;
+  max-width: 400px;
+  height: 12px;
+    background-color: #ece7e7;
+    border-radius: 10px;
+ 
+    position: relative;
+    border: .2px solid rgba(17, 16, 16, 0.2);
+  position: relative;
 }
+
+.progress {
+  position: absolute;
+  top: .2rem;
+    height: 5px;
+    width: 0;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+    left: .3rem;
+}
+
+span {
+  font-size: 16px;
+}
+
+.progressSkills {
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.abtDesoc  {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.project  {
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+  
+}
+.profile {
+  margin-right: -6rem;
+}
+
+.Display, .profile  {
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.1)); 
+  /* border: 1px solid rgb(32, 31, 31); */
+  box-shadow: 0px 0px 5px 5px rgba(100, 100, 111, 0.1);
+  border-radius: 10px;
+@apply my-9
+}
+
+.projectDisplay:hover .projectHover {
+  transition: .6s ease-in-out;
+  opacity: 1;
+  top: 0;
+}
+
+.projectHover {
+  /* opacity: 1; */
+}
+
+#textA {
+  resize: none;
+}
+
+h3 {
+
+}
+
+.loader {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+  
