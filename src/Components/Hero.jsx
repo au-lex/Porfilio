@@ -31,7 +31,8 @@ const Hero = () => {
    
 
           <Header />
-          <div  className="flex justify-center px-10 mb-[4rem] lg:hidden xl:hidden md:hidden  mt-[10rem]">
+          <div  className="flex justify-center px-10 
+          mb-[4rem] lg:hidden xl:hidden md:hidden  mt-[1.2rem]">
 
 
 
@@ -74,26 +75,33 @@ const Hero = () => {
                 </button>
               </section>
               <div className="socialLinks mt-[2rem]">
-                <section className="flex space-x-8">
+                <section className="flex space-x-12">
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                    <a href ="https://www.linkedin.com/in/boniface-ifebuche-aulex-467a74247/" target ="blank">
                       <i class="ri-linkedin-box-fill"></i>
-                    </span>
+                    </a>
                   </li>
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
-                    <span>
+                  <a target="blank" 
+                   href="mailto:bonifacepaul500@gmail.com?subject=Feedback&body=Hello! 
+                  what can we offer your.">
+
+                    
                       <i class="ri-mail-line"></i>
-                    </span>
+                    </a>
                   </li>
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                    <a href ="https://twitter.com/Aulex_0?t=GI4YSNRgnRbbThqUDLI4OA&s=09" target="blank">
                       <i class="ri-twitter-x-line"></i>
-                    </span>
+                    </a>
                   </li>
-                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600 
+                    hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href="https://github.com/au-lex?tab=repositories"  target="blank">
                       <i class="ri-github-fill"></i>
-                    </span>
+                    </a>
+
+                    <a></a>
                   </li>
                 </section>
               </div>
@@ -139,24 +147,31 @@ const Hero = () => {
               <div className="socialLinks mt-[8rem]">
                 <section className="flex space-x-12">
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                    <a href ="https://www.linkedin.com/in/boniface-ifebuche-aulex-467a74247/" target ="blank">
                       <i class="ri-linkedin-box-fill"></i>
-                    </span>
+                    </a>
                   </li>
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
-                    <span>
+                  <a target="blank" 
+                   href="mailto:bonifacepaul500@gmail.com?subject=Feedback&body=Hello! 
+                  what can we offer your.">
+
+                    
                       <i class="ri-mail-line"></i>
-                    </span>
+                    </a>
                   </li>
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                    <a href ="https://twitter.com/Aulex_0?t=GI4YSNRgnRbbThqUDLI4OA&s=09" target="blank">
                       <i class="ri-twitter-x-line"></i>
-                    </span>
+                    </a>
                   </li>
-                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                    <span>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600 
+                    hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href="https://github.com/au-lex?tab=repositories"  target="blank">
                       <i class="ri-github-fill"></i>
-                    </span>
+                    </a>
+
+                    <a></a>
                   </li>
                 </section>
               </div>

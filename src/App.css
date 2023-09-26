@@ -45,20 +45,7 @@ li {
   cursor: pointer;
 }
 
-.active {
-  color: red; /* Change to your desired active color */
-}
 
-/* Mobile Menu */
-.navContainer {
-  display: none;
- 
-}
-
-/* Adjust the mobile menu styles when it's active */
-.menuOpen.active + .navContainer {
-  display: block;
-}
 
 
 .btn {
@@ -270,3 +257,4 @@ h3 {
 
 }
   
+

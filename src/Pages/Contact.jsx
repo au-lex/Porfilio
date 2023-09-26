@@ -118,29 +118,36 @@ const Contact = () => {
        placeholder="Enter your email..." type="email" />
 
 <div className="socialLinks mt-[4rem]">
-            <section className="flex space-x-12">
-              <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-linkedin-box-fill"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
-                <span>
-                  <i class="ri-mail-line"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-twitter-x-line"></i>
-                </span>
-              </li>
-              <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
-                <span>
-                  <i class="ri-github-fill"></i>
-                </span>
-              </li>
-            </section>
-          </div>
+                <section className="flex space-x-12">
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href ="https://www.linkedin.com/in/boniface-ifebuche-aulex-467a74247/" target ="blank">
+                      <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300  ">
+                  <a target="blank" 
+                   href="mailto:bonifacepaul500@gmail.com?subject=Feedback&body=Hello! 
+                  what can we offer your.">
+
+                    
+                      <i class="ri-mail-line"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href ="https://twitter.com/Aulex_0?t=GI4YSNRgnRbbThqUDLI4OA&s=09" target="blank">
+                      <i class="ri-twitter-x-line"></i>
+                    </a>
+                  </li>
+                  <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600 
+                    hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
+                    <a href="https://github.com/au-lex?tab=repositories"  target="blank">
+                      <i class="ri-github-fill"></i>
+                    </a>
+
+                    <a></a>
+                  </li>
+                </section>
+              </div>
        </div>
 
        <div className='mt-[4rem]'>
