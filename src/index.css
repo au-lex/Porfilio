@@ -6,21 +6,4 @@
 
 
 
-/* Initial state - menu hidden */
-.navLinks-hidden {
-    /* transform: translateY(-100%); */
-    opacity: 0;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-    min-height: 0;
 
-    /* display: none; */
-    /* position: absolute; */
-}
-
-/* Menu shown */
-.navLinks-shown {
-transition: .6s ease-in-out;
-    transform: translateY(0);
-    opacity: 1;
-    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
-}

@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -250,10 +251,8 @@ h3 {
 }
 
 .loader {
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
+  @apply flex justify-center h-[100vh]  bg-gray-100;
+ 
 
 }
   
