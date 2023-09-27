@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const About = () => {
 
   const [showLoader, setShowLoader] = useState(true);
+  
   useEffect(() => {
       const timer = setTimeout(() => {
           setShowLoader(false);

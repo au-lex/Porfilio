@@ -17,26 +17,25 @@ const Hero = () => {
 
     
 {/* mobile */}
-<div>
-
-</div>
-
-
       <section>
 
 
 
-        <div className="bg ">
+        <div className=" bg">
 
    
 
           <Header />
           <div  className="flex justify-center px-10 
-          mb-[4rem] lg:hidden xl:hidden md:hidden  mt-[1.2rem]">
+          mb-[4rem] lg:hidden xl:hidden md:hidden  mt-[1.2rem] ">
 
 
 
 <section>
+
+
+    <div className="flex justify-center">
+
 
 
           <div  className=" 
@@ -50,9 +49,10 @@ const Hero = () => {
                 />
                 
               </div>
+                  </div>
 
 
-          <figcaption className="desc pt-10 lg:hidden md:hidden xl:hidden" >
+          <figcaption className="desc pt-10 lg:hidden md:hidden xl:hidden pl-2" >
               <h2 >
                 hi, i'm <br />
                 <span className="text-[2.5rem] capitalize">
@@ -75,7 +75,7 @@ const Hero = () => {
                 </button>
               </section>
               <div className="socialLinks mt-[2rem]">
-                <section className="flex space-x-12">
+                <section className="flex space-x-8">
                   <li class="border rounded-full border-gray-300 p-4  hover:text-blue-600   hover:border-blue-600 transform hover:scale-105 transition-transform duration-300">
                     <a href ="https://www.linkedin.com/in/boniface-ifebuche-aulex-467a74247/" target ="blank">
                       <i class="ri-linkedin-box-fill"></i>
@@ -171,7 +171,7 @@ const Hero = () => {
                       <i class="ri-github-fill"></i>
                     </a>
 
-                    <a></a>
+                   
                   </li>
                 </section>
               </div>
